@@ -19,17 +19,20 @@
     </figure>
     <h3 class="d-flex justify-content-center card-header" style="margin-head:40px;">ค่าคุณภาพดิน</h3>
     <div class="input-group mb-3">
-        <span class="input-group-text" id="inputGroup-sizing-default">ค่าความชื้นในดิน (%)</span>
+        <span class="input-group-text" id="inputGroup-sizing-default">ค่าความชื้นในดิน</span>
+        <span class="input-group-text" id="inputGroup-sizing-default">(%)</span>
         <input v-model="sm" type="text" class="form-control" aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default" @keyup="fetchSm(sm,ec,ph)">
     </div>
     <div class="input-group mb-3">
-        <span class="input-group-text" id="inputGroup-sizing-default">ค่าความเค็มในดิน (ms/cm)</span>
+        <span class="input-group-text" id="inputGroup-sizing-default">ค่าความเค็มในดิน</span>
+        <span class="input-group-text" id="inputGroup-sizing-default">(ms/cm)</span>
         <input v-model="ec" type="text" class="form-control" aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default" @keyup="fetchEc(sm,ec,ph)">
     </div>
     <div class="input-group mb-3">
         <span class="input-group-text" id="inputGroup-sizing-default">ค่าความเป็นกรดเป็นด่าง</span>
+        <span class="input-group-text" id="inputGroup-sizing-default">PH</span>
         <input v-model="ph" type="text" class="form-control" aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default" @keyup="fetchPh(sm,ec,ph)">
     </div>
